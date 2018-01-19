@@ -1,11 +1,16 @@
+#define LIST_INIT_SIZE 100
 #define MAXSIZE 100
+#define LISTINCREMENT 10
+
+/*
+*/
 
 typedef struct{
-    int data[MaxSize];
+    int elem[MAXSIZE];
     int length;
 }Sqlist;
 
 typedef struct{
-    int *data;
-    int maxsize,length;
+    int *elem;
+    int listsize,length;
 }Seqlist;
