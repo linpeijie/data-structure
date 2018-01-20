@@ -13,7 +13,12 @@ int main(){
         printf("%d ",L.elem[i]);
     }
 
-    printf("\n%d\n",L.length);
+    L.length=10;
+
+    clearlist(&L);
+
+    if(listempty(L))
+        printf("empty list");
 
     destroylist(&L);
 
