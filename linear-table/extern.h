@@ -1,3 +1,7 @@
+#ifndef extern_h
+#define extern_h
 
-extern bool init_list_seq(Seqlist *L);
-extern bool init_list(Sqlist *L);
+bool init_list_seq(Seqlist *L);
+bool init_list_sq(Sqlist *L);
+
+#endif 
