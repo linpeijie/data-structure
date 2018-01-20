@@ -6,5 +6,6 @@ bool init_list_sq(Sqlist *L);     //create a empty list
 bool clearlist(Seqlist *L);       //make the list empty
 bool destroylist(Seqlist *L);    //destroy list
 bool list_empty(Seqlist L);      //if list is empty,return true,else return false
+int get_elem(Seqlist L,int i,int *e);
 
 #endif 

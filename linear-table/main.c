@@ -4,7 +4,7 @@
 
 int main(){
     Seqlist L;
-    int i;
+    int i,e;
 
     init_list_seq(&L);
 
@@ -12,8 +12,10 @@ int main(){
         L.elem[i] = i;
         printf("%d ",L.elem[i]);
     }
-
     L.length=10;
+
+    get_elem(L,4,&e);
+    printf("\n%d\n",e);
 
     clearlist(&L);
 
