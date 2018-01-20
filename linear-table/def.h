@@ -1,3 +1,6 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<stdbool.h>
 #define LIST_INIT_SIZE 100
 #define MAXSIZE 100
 #define LISTINCREMENT 10
