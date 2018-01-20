@@ -1,6 +1,7 @@
+#include<stdio.h>
 #include"def.h"
 
-extern bool init_list(Sqlist *L){
+bool init_list_sq(Sqlist *L){
     /* Init a linear list
     */
     
@@ -9,8 +10,7 @@ extern bool init_list(Sqlist *L){
     return true;
 }
 
-
-extern bool init_list_seq(Seqlist *L){
+bool init_list_seq(Seqlist *L){
     /* create a empty linear list
     */
 
