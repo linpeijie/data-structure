@@ -3,14 +3,16 @@
 #include"extern.h"
 
 int main(){
-    Sqlist L;
+    Seqlist L;
     int i;
 
-    init_list_sq(&L);
+    init_list_seq(&L);
 
     for(i=0;i<10;i++){
         L.elem[i] = i;
         printf("%d ",L.elem[i]);
     }
+
+    printf("\n%d\n",L.length);
     return 0;
 }
