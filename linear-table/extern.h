@@ -3,5 +3,6 @@
 
 bool init_list_seq(Seqlist *L);
 bool init_list_sq(Sqlist *L);
+bool clearlist(Sqlist *L);
 
 #endif 
