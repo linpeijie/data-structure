@@ -14,5 +14,8 @@ int main(){
     }
 
     printf("\n%d\n",L.length);
+
+    destroylist(&L);
+
     return 0;
 }
