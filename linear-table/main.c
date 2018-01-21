@@ -1,6 +1,6 @@
 #include<stdio.h>
-#include"def.h"
-#include"extern.h"
+#include"sequence/def.h"
+#include"sequence/extern.h"
 
 int main(){
     Seqlist L;
