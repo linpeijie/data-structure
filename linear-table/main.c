@@ -13,10 +13,12 @@ int main(){
         printf("%d ",L.elem[i]);
     }
     L.length=10;
-    
-    prior_elem(L,4,&e);
-    printf("\n%d\n",e);
-
+   
+    printf("\n");
+    delete_list(&L,6,&e); 
+    for(i=0;i<L.length;i++)
+        printf("%d ",L.elem[i]);
+    printf("%d ",e);
     destroylist(&L);
 
     return 0;
