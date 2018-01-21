@@ -2,6 +2,13 @@
 #include"def.h"
 #include"extern.h"
 
+bool compare(int le,int e){
+    if(le == e)
+        return true;
+
+    return false;
+}
+
 int main(){
     Seqlist L;
     int i,e;
@@ -14,7 +21,8 @@ int main(){
     }
     L.length=10;
 
-    get_elem(L,4,&e);
+   bool (*f)(int,int) = compare;
+    e=locate_elem(L,3,f);
     printf("\n%d\n",e);
 
     clearlist(&L);
