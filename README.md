@@ -10,9 +10,9 @@
 ## 1.函数指针
 
 ```将函数名当做指针传递到另一个函数参数中，可以实现在函数中直接使用函数的功能
-int  a(int x, int y){ return 0;};   //要当做参数的函数
-bool another_function( int (*a)(int) )
+int  a(int x, int y){ return 0;};               //要当做参数的函数
+bool another_function( int (*a)(int) );          //接受函数指针的函数
 main{
-    int  (*f)(int,int)  =  a;     ／／定义函数指针
-    another_function( f );    ／／把函数指针当做参数传递
+    int  (*f)(int,int)  =  a;                   ／／定义函数指针
+    another_function( f );                      ／／把函数指针当做参数传递
 }```
