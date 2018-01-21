@@ -15,10 +15,11 @@ int main(){
     L.length=10;
    
     printf("\n");
-    delete_list(&L,6,&e); 
+    delete_list(&L,3,&e); 
     for(i=0;i<L.length;i++)
         printf("%d ",L.elem[i]);
-    printf("%d ",e);
+    printf("\n%d ",e);
+
     destroylist(&L);
 
     return 0;
