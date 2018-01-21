@@ -6,11 +6,11 @@
 ''':def.h : 文件用于声明变量等实现'''  
 ''':extern.h : 实现外部函数引用，只用 main.c 测试'''  
 
-  函数指针
+  ｀函数指针
   将函数名当做指针传递到另一个函数参数中，可以实现在函数中直接使用函数的功能
   int  a(int x, int y){ return 0;};   //要当做参数的函数
   bool another_function( int (*a)(int) )
   main{
       int  (*f)(int,int)  =  a;     ／／定义函数指针
       another_function( f );    ／／把函数指针当做参数传递
-  }
+  }｀
