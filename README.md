@@ -13,4 +13,4 @@ bool another_function( int (*a)(int) )
 main{
     int  (*f)(int,int)  =  a;     ／／定义函数指针
     another_function( f );    ／／把函数指针当做参数传递
-}｀
+}
