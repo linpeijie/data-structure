@@ -1,2 +1,2 @@
 
-int create_list(LinkList L);
+LinkList create_list(LinkList *L);

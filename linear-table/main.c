@@ -4,13 +4,15 @@
 
 int main(){
     int e,i;
-    LNode *L;
+    LinkList L;
+    LinkList p;
 
     create_list(&L);
-
-    printf("\n");
-    for(L=L->next; L->next!=NULL;L=L->next)
-        printf("%d ",L->data);
     
+    L = L->next;
+    while(L!=NULL){
+        printf("%d ",L->data);
+        L = L->next;
+    }
     return 0;
 }
