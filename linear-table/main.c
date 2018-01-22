@@ -5,14 +5,13 @@
 int main(){
     int e,i;
     LinkList L;
-    LinkList p;
+    LNode *p;
+
 
     create_list(&L);
-    
-    L = L->next;
-    while(L!=NULL){
-        printf("%d ",L->data);
-        L = L->next;
-    }
+
+    get_elem_c(L,6,&p);
+    printf("%d",p->data); 
+
     return 0;
 }
