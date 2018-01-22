@@ -1,26 +1,16 @@
 #include<stdio.h>
-#include"sequence/def.h"
-#include"sequence/extern.h"
+#include"chain/def_c.h"
+#include"chain/extern_c.h"
 
 int main(){
-    Seqlist L;
-    int i,e;
+    int e,i;
+    LNode *L;
 
-    init_list_seq(&L);
+    create_list(&L);
 
-    for(i=0;i<10;i++){
-        L.elem[i] = i;
-        printf("%d ",L.elem[i]);
-    }
-    L.length=10;
-   
     printf("\n");
-    delete_list(&L,3,&e); 
-    for(i=0;i<L.length;i++)
-        printf("%d ",L.elem[i]);
-    printf("\n%d ",e);
-
-    destroylist(&L);
-
+    for(L=L->next; L->next!=NULL;L=L->next)
+        printf("%d ",L->data);
+    
     return 0;
 }
