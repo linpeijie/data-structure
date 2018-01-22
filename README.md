@@ -17,3 +17,19 @@ main{
     another_function( f );                      ／／把函数指针当做参数传递
 }
 ```
+## 2.指向指针的指针(Pointers to Pointers)
+```主要用于直接在main函数中实现C++的引用功能'&'
+typedef struct L{
+    struct L *next;
+}L,*LL;
+
+LL func(LL *q){
+    (*q)->next = NULL;
+}
+
+main(){
+    LL p;
+    func(&p);
+    此时p已经被改变，可以直接使用
+}
+```
