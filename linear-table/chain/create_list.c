@@ -3,21 +3,24 @@
 /* use '**' Pointers to Pointers to update L
 */
 LinkList create_list(LinkList *L){
-    LNode *s;
+    LNode *s,*r;
     int elem;
 
     (*L) = (LNode *)malloc(sizeof(LNode));
     (*L)->next = NULL;
+    r = (*L);
 
-    printf("Enter the elem of list end with '9999':");
+    printf("Enter the elem of list end with '000':");
     scanf("%d",&elem);
-    while(elem!=9999 ){
+    while(elem!=000){
         s = (LNode *)malloc(sizeof(LNode));
         s->data = elem;
-        s->next = (*L)->next;
-        (*L)->next = s;
+        r->next = s;
+        r = s;
         scanf("%d",&elem);
     } 
+    
+    r->next = NULL;
 
     return (*L);
 }
