@@ -1,6 +1,6 @@
 #include"def_c.h"
 
-/* use '**' Pointers to Pointers to update L
+/* 用＊＊双指针来实现 & 引用的功能，用尾插法建立一个单链表
 */
 LinkList create_list(LinkList *L){
     LNode *s,*r;
