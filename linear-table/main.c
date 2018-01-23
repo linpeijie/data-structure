@@ -10,10 +10,14 @@ int main(){
     create_list(&L);
 
 
-    printf("what position's number do you want:");
+    printf("enter i:");
     scanf("%d",&i);
-    get_elem_c(L,i,&p);
-    printf("%d",p->data); 
-
+    delete_elem_c(&L,i);
+    
+    p = L->next;
+    while(p!=NULL){
+        printf("%d",p->data); 
+        p = p->next;
+    }
     return 0;
 }
