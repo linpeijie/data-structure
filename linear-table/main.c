@@ -5,13 +5,14 @@
 int main(){
     int e,i;
     LinkList L;
+    LNode* p;
 
     create_list(&L);
 
 
-    printf("what number do you want:");
-    scanf("%d",&e);
-    LNode* p = locate_elem_c(L,e);
+    printf("what position's number do you want:");
+    scanf("%d",&i);
+    get_elem_c(L,i,&p);
     printf("%d",p->data); 
 
     return 0;
