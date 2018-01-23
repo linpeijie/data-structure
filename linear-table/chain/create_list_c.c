@@ -24,3 +24,4 @@ LinkList create_list(LinkList *L){
 
     return (*L);
 }
+ 
