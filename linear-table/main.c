@@ -1,6 +1,6 @@
 #include<stdio.h>
-#include"chain/def_c.h"
-#include"chain/extern_c.h"
+#include"sequence/def.h"
+#include"sequence/extern.h"
 
 int main(){
     int e,i;
