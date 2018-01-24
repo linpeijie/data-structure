@@ -2,6 +2,7 @@
 #include"../sequence/def.h"
 #include"../sequence/extern.h"
 
+/* 删除顺序表中最小元素结点，用函数返回其值，并用L最后一个元素替换它*/
 int delete_min_elem(Seqlist L){
     int min,i,j,index;
 
