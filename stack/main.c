@@ -17,6 +17,9 @@ int main(){
 
     get_top(s,&e);
     printf("\n%d",e);
-    
+
+    destroy_stack(&s);
+    printf("\n%d",s.stacksize);
+
     return 0;
 }
