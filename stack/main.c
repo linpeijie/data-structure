@@ -18,6 +18,8 @@ int main(){
     get_top(s,&e);
     printf("\n%d",e);
 
+    printf("\n%d",stack_length(s));
+
     destroy_stack(&s);
     printf("\n%d",s.stacksize);
 
