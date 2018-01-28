@@ -7,6 +7,6 @@ typedef struct QNode{
 }QNode,*QueuePtr;
 
 typedef struct{
-    QueuePtr* front;
-    QueuePtr* rear;
+    QueuePtr front;
+    QueuePtr rear;
 }LinkQueue;
