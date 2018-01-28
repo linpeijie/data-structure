@@ -4,8 +4,23 @@
 
 int main(){
     LinkQueue Q;
+    int e;
 
     init_queue(&Q);
+
+    printf("enter a elem:");
+    scanf("%d",&e);
+
+    en_queue(&Q,e);
+
+    de_queue(&Q,&e);
+    printf("delete:%d\n",e);
+
+    clear_queue(&Q);
+    if(queue_empty(Q))
+        printf("The queue is empty\n");
+ 
+    destroy_queue(&Q);
  
     return 0;
 }
