@@ -13,6 +13,8 @@ int main(){
 
     en_queue(&Q,e);
 
+    printf("length:%d\n",queue_length(Q));
+
     de_queue(&Q,&e);
     printf("delete:%d\n",e);
 
