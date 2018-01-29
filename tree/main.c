@@ -4,11 +4,9 @@
 
 int main(){
     BiTree T;
-    T = (BiTNode*)malloc(sizeof(BiTNode));
-   
-    create_tree_pre(&T);
-
-    
+  
+    init_tree(T);
+    destroy_tree(T);
  
     return 0;
 }
