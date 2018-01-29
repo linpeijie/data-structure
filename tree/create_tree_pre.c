@@ -15,10 +15,10 @@ bool create_tree_pre(BiTree* T){
         if(!((*T) = (BiTNode*)malloc(sizeof(BiTNode))))
             exit(0);
         (*T)->elem = ch;
-
-        printf("lchild:%c\n",(*T)->elem);
+        
+        printf("enter lchild:\n");
         create_tree_pre(&((*T)->lchild));
-        printf("rchild:%c\n",(*T)->elem);
+        printf("enter rchild:\n");
         create_tree_pre(&((*T)->rchild));
     }
     return true; 
