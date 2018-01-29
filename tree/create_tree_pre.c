@@ -1,11 +1,12 @@
 #include<stdio.h>
 #include"def.h"
+/* 这里因为用了字符变量，所以一定要用 getchar()吸收掉多余的'\n'字符，不然会发生错误*/
 
 bool create_tree_pre(BiTree* T){
     char ch;
     
     scanf("%c",&ch);
-    getchar();                  //absorb redundant symbols
+    getchar();                            //absorb redundant symbols
     
     if(ch == '#'){
         (*T) = NULL;
