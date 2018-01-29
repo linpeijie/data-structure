@@ -3,5 +3,6 @@
 
 typedef struct BiTNode{
     char elem;
-    struct BiTNode *lchild,*rchild;
+    struct BiTNode* lchild;
+    struct BiTNode* rchild;
 }BiTNode,*BiTree;
