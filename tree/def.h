@@ -2,6 +2,6 @@
 #include<stdbool.h>
 
 typedef struct BiTNode{
-    int elem;
+    char elem;
     struct BiTNode *lchild,*rchild;
 }BiTNode,*BiTree;

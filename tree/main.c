@@ -4,8 +4,10 @@
 
 int main(){
     BiTree T;
-  
-    init_tree(T);
+
+    printf("create a tree:\n");  
+    create_tree_pre(T);
+
     destroy_tree(T);
  
     return 0;
