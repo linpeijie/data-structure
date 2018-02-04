@@ -11,8 +11,10 @@ bool create_tree(BiTree* T,char definition[]){
     
     if(ch == '#'){
         (*T) = NULL;
-    }    
+    }
+    
     else if(!strcmp(definition, "pre")){
+        /* pre order traverse*/
         if(!((*T) = (BiTNode*)malloc(sizeof(BiTNode))))
             exit(0);
         (*T)->elem = ch;
@@ -21,16 +23,31 @@ bool create_tree(BiTree* T,char definition[]){
         create_tree(&((*T)->lchild),definition);
         printf("enter rchild:\n");
         create_tree(&((*T)->rchild),definition);
+
     }
+
     else if(!strcmp(definition,"in")){
+        /*In order traverse*/
         if(!((*T) = (BiTNode*)malloc(sizeof(BiTNode))))
             exit(0);
         
+        printf("enter lchild:\n");        
         create_tree(&((*T)->lchild),definition);
         (*T)->elem = ch;
+        printf("enter rchild:\n");
         create_tree(&((*T)->rchild),definition);
     }
-    else if(!strcmp(definition,"post")){}
+    else if(!strcmp(definition,"post")){
+    /*post order traverse*/
+        if(!((*T) = (BiTNode*)malloc(sizeof(BiTNode))))
+            exit(0);
+
+        printf("enter lchild:\n");
+        create_tree(&((*T)->lchild),definition);
+        printf("enter rchild:\n");
+        create_tree(&((*T)->rchild),definition);
+        (*T)->elem = ch;
+    }
 
     return true; 
 }
