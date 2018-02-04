@@ -6,7 +6,7 @@ int main(){
     BiTree T;
 
     printf("create a tree:\n");  
-    create_tree(&T,"pre");
+    create_tree(&T,"in");
 
     destroy_tree(&T);
  

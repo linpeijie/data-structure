@@ -22,8 +22,15 @@ bool create_tree(BiTree* T,char definition[]){
         printf("enter rchild:\n");
         create_tree(&((*T)->rchild),definition);
     }
-    else if(strcmp(definition,"in")){}
-    else if(strcmp(definition,"post")){}
+    else if(!strcmp(definition,"in")){
+        if(!((*T) = (BiTNode*)malloc(sizeof(BiTNode))))
+            exit(0);
+        
+        create_tree(&((*T)->lchild),definition);
+        (*T)->elem = ch;
+        create_tree(&((*T)->rchild),definition);
+    }
+    else if(!strcmp(definition,"post")){}
 
     return true; 
 }
