@@ -14,13 +14,13 @@ int main(){
     printf("create a tree:\n");  
     create_tree(&T,ch);
 
-    if(!tree_empty(T))
-        printf("Tree is no empty.\n");
+    printf("choose pre,in,post or level to print the tree:");
+    scanf("%s",ch);
+    getchar();
 
-    clear_tree(&T);
+    print_tree(T,ch);
 
-    if(tree_empty(T))
-        printf("Tree is empty.\n");
+    destroy_tree(&T);
  
     return 0;
 }
