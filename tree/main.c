@@ -4,19 +4,21 @@
 
 int main(){
     BiTree T;
-    BiTNode r;
-    char ch[10];
-    char e;
+    char ch;
     
-    printf("choose pre,in or post:");
-    scanf("%s",ch);
+    create_bst(&T);
+
+    print_tree(T,"in");
     getchar();
 
-    printf("create a tree:\n");  
-    create_tree(&T,ch);
-    
-    r.elem = '3';
-    parent(T,r);
+    printf("\nenter search elem:");
+    scanf("%c",&ch);
+
+
+    if(bst_search(T,ch))
+        printf("exit!");
+    else
+        printf("Don't exit!");
 
     destroy_tree(&T);
  
