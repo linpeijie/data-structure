@@ -15,4 +15,6 @@ BiTNode* parent(BiTree T,BiTNode p){
         parent(T->lchild,p);
         parent(T->rchild,p);
     }
+
+    return NULL;
 }
