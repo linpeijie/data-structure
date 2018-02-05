@@ -4,8 +4,9 @@
 
 int main(){
     BiTree T;
+    BiTNode r;
     char ch[10];
-
+    char e;
     
     printf("choose pre,in or post:");
     scanf("%s",ch);
@@ -13,12 +14,9 @@ int main(){
 
     printf("create a tree:\n");  
     create_tree(&T,ch);
-
-    printf("choose pre,in,post or level to print the tree:");
-    scanf("%s",ch);
-    getchar();
-
-    print_tree(T,ch);
+    
+    r.elem = '3';
+    parent(T,r);
 
     destroy_tree(&T);
  
