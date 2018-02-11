@@ -15,18 +15,21 @@ bool delete(BiTree* T){
         /*左右孩子结点均有，用其直接后继替换*/
         p = (*T)->rchild;
 
+        /*寻找直接后继*/
         while(p->lchild){
             q = p;
             p = p->lchild;
         }
         
+        /*替换*/
         if(p->lchild!=NULL){
             q->lchild = p->rchild;
             p->lchild = (*T)->lchild;
             p->rchild = (*T)->rchild;
         }
-  
+        
         (*T) = p;
+        
         free(p);
         free(q);
     }
