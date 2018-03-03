@@ -8,3 +8,4 @@ typedef struct BiTNode{
     struct BiTNode* lchild;
     struct BiTNode* rchild;
 }BiTNode,*BiTree;
+

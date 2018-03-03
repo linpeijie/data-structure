@@ -4,23 +4,17 @@
 
 int main(){
     BiTree T;
-    char ch;
-    
-    create_bst(&T);
+    char ch[100];
+    int n,i;
 
-    print_tree(T,"in");
-    getchar();
+    printf("Please enter the n numbers of Huffman Tree:");
+    scanf("%d",&n);
 
-    printf("\nenter search elem:");
-    scanf("%c",&ch);
+    printf("Please enter n values:");
+    for(i=0;i<n;i++)
+        scanf("%c",&ch[i]);
 
+    T = CreateHuffman(ch,n);
 
-    if(bst_search(T,ch))
-        printf("exit!");
-    else
-        printf("Don't exit!");
-
-    destroy_tree(&T);
- 
     return 0;
 }

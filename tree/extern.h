@@ -9,6 +9,10 @@ int tree_depth(BiTree T);
 BiTNode root(BiTree T,BiTNode* r);
 BiTNode* parent(BiTree T,BiTNode p);
 
+/*BST Tree*/
 bool bst_insert(BiTree* T,char e);
 bool create_bst(BiTree* T);
-BiTNode* bst_search(BiTree T,char ch); 
+BiTNode* bst_search(BiTree T,char ch);
+
+/*Huffman Tree*/
+BiTNode* CreateHuffman(char a[],int n);
