@@ -4,7 +4,7 @@
 #include<string.h>
 
 typedef struct BiTNode{
-    char elem;
+    int elem;
     struct BiTNode* lchild;
     struct BiTNode* rchild;
 }BiTNode,*BiTree;

@@ -15,4 +15,5 @@ bool create_bst(BiTree* T);
 BiTNode* bst_search(BiTree T,char ch);
 
 /*Huffman Tree*/
-BiTNode* CreateHuffman(char a[],int n);
+BiTNode* CreateHuffman(int a[],int n);
+int weightPathLength(BiTree T,int len);
