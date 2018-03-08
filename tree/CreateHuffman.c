@@ -6,7 +6,7 @@
 */
 #include"def.h"
 
-BiTNode* CreateHuffman(char a[],int n){
+BiTNode* CreateHuffman(int a[],int n){
     int i,j,min,secendMin;
     BiTNode **b,*q;
     b = malloc(n*sizeof(BiTNode));
