@@ -5,7 +5,7 @@ bool print_tree(BiTree T,char ch[]){
     if(!strcmp(ch,"pre")){
     /* use 'pre order traverse' print the tree*/
         if(T!=NULL){
-            printf("%c ",T->elem);
+            printf("%d ",T->elem);
             print_tree(T->lchild,ch);
             print_tree(T->rchild,ch);
        }
@@ -15,7 +15,7 @@ bool print_tree(BiTree T,char ch[]){
     /*use 'in order traverse' print the tree*/
         if(T!=NULL){
             print_tree(T->lchild,ch);
-            printf("%c ",T->elem);
+            printf("%d ",T->elem);
             print_tree(T->rchild,ch);
         }
     }
@@ -25,7 +25,7 @@ bool print_tree(BiTree T,char ch[]){
         if(T!=NULL){
             print_tree(T->lchild,ch);
             print_tree(T->rchild,ch);
-            printf("%c ",T->elem);
+            printf("%d ",T->elem);
         }
     }
 
