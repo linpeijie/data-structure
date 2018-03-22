@@ -1,5 +1,7 @@
 #include"def.h"
-
+/**
+* 无向带权图
+*/
 void createMGraph(MGraph *G){
     int i,j,k,w;
 
