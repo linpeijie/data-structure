@@ -18,13 +18,15 @@ void createALGraph(ALGraph *G){
     for(k = 0; k < G->arcNum; k++){
         scanf("%d%d%d",&i,&j,&w);
         
-        pe = (ArcNode*)malloc(sizeof(ArcNode));
+        pe = (ArcNode*)malloc(sizeof(ArcNode));             //创建边表
         pe->adjvex = j;
+        pe->weight = w;
         pe->next = G->adjList[i].first;
         G->adjList[i].first = pe;
 
-        pe = (ArcNode*)malloc(sizeof(ArcNode));
+        pe = (ArcNode*)malloc(sizeof(ArcNode));             //无向图是对称的，所以i，j两个结点指向对方
         pe->adjvex = i;
+        pe->weight = w;
         pe->next = G->adjList[j].first;
         G->adjList[j].first = pe;
     }
