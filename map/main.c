@@ -3,9 +3,9 @@
 #include"extern.h"
 
 int main(){
-    MGraph G;
+    ALGraph G;
 
-    createMGraph(&G);
+    createALGraph(&G);
 
     return 0;
 }
